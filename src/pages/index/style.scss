@@ -1,0 +1,305 @@
+
+.post{
+	max-width: 952px;
+	background-color: #ffffff;
+	margin: 0 auto 50px;
+	box-shadow: 0 0 40px #ebedf0;
+
+	&__header{
+	height: 225px auto;
+	font-family: $font-bold;
+	padding-left: 97px;
+	padding-right: 97px;
+	position: relative;
+	}	
+
+	&__divider{
+  	height: 2px;
+  	background: #eeeeee;
+  	margin: 0 98px 27px 98px;
+	}
+
+	&__header-category{
+	height: 32px;
+	display: inline-block;
+	position: absolute;
+	top: 20px;
+	right: -20px;
+	padding-left: 12px;
+	padding-right: 12px;
+	line-height: 32px;
+	background-color: #5c6bc0;
+	font-size: 14px;
+	color: #ffffff;
+	}
+
+	&__header-header{
+	font-size: 40px;
+	color: #000000;
+	
+	}
+
+	&__header-date{
+	font-size: 14px;
+	color: #bdbdbd;
+	padding-top: 58px;
+	margin: 0;
+	}
+
+	&__text{
+	padding: 0 84px 40px 97px;
+	font-family: $font-regular;
+	font-size: 17px;
+	color: #333333;
+	line-height: 30px
+	}
+
+	&__read-more{
+	display: inline-block;
+	width: 189px;
+	height: 53px;
+	font-family: $font-bold;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #5c6bc0;
+	border: 1px solid #ffffff;
+	background-color: #ffffff;
+	margin-left: 64px;
+	margin-bottom: 60px;
+	float: left;
+	}
+
+	&__bottom-container{
+	display: inline-block;
+	width: 100%;
+	}
+
+	&__tags{
+	float: right;
+	margin-right: 80px;
+	margin-top: 15px;
+	font-size: 15px;
+	font-family: $font-regular;
+
+		a {
+			margin-right: 4px;	
+		}
+	}
+
+	&__images{
+	max-width:100%
+	}
+}
+
+a{
+	color: #b2b2b2;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #6674c4;
+	text-decoration: underline;
+}
+
+a:active{
+	color: #6674c4;
+	text-decoration: none;
+}
+
+
+.last-post{
+	margin: 0 auto 100px;
+
+	&__text{
+	padding: 0 70px 0 97px;
+	font-family: $font-regular;
+	font-size: 17px;
+	color: #333333;
+	line-height: 30px
+	}
+
+	&__text-italics{
+	font-family: $font-italic;
+	font-size: 25px;
+	color: #7f7f7f;
+	line-height: 38px
+	}
+
+	&__header-date{
+	padding-top: 38px;
+	}
+
+	&__header-category{
+	top: 6px;
+	}
+}
+
+
+@media (max-width: 768px) {
+
+  .post, .last-post {
+
+    max-width: 700px;
+    min-width: 440px;
+	margin-bottom: 20px;
+	position: relative;
+	&__header {
+		padding-left: 36px;
+		padding-right: 36px;
+		position: unset;
+	}
+
+
+    &__header-header {
+    	font-size: 26px;
+    	line-height: 32px;
+    	margin-bottom: 27px;
+    }
+
+	&__text {
+    	font-size: 16px;
+    	padding: 0 36px 0 36px;
+    	margin-bottom: 28px;
+    	margin-top: 32px;
+    	line-height: 26px;
+    }
+
+    &__header-date {
+    	font-size: 15px;
+    	padding-top: 39px;
+    	margin: 0;
+    }
+
+    &__divider {
+    	margin: 0 auto;
+    	width: 628px;
+    }
+
+    &__header-category {
+    	top: 0;
+    	right: 0;
+    }
+
+    &__read-more {
+
+    	padding-left: 18px;
+    	padding-right: 18px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+    	margin-left: 18px;
+    	margin-bottom: 33px;
+		width: auto;
+		height: auto;
+    }
+
+
+	&__tags {
+		margin-top: 16px;
+		margin-right: 36px;
+		margin-left: 24px;
+		margin-bottom: 26px;
+	}
+
+	&__text-italics {
+		font-size: 18px;
+		margin-top: 32px;
+		line-height: 30px;
+	}
+  }
+
+	.last-post {
+		margin-bottom: 54px;
+		&__header-date {
+			padding-top: 29px;
+		}
+	}
+
+
+  
+}
+
+
+@media (max-width: 320px) {
+
+  .post, .last-post {
+    width: 280px;
+    min-width: auto;
+    max-width: auto;
+	margin-bottom: 20px;
+	position: relative;
+	&__header {
+		padding-left: 24px;
+		padding-right: 24px;
+		position: unset;
+	}
+
+
+    &__header-header {
+    	font-size: 24px;
+    	line-height: 32px;
+    	margin-bottom: 27px;
+    }
+
+	&__text {
+    	font-size: 16px;
+    	padding: 0 30px 0 24px;
+    	margin-bottom: 28px;
+    	margin-top: 32px;
+    	line-height: 28px;
+    }
+
+    &__header-date {
+    	font-size: 15px;
+    	padding-top: 39px;
+    	margin: 0;
+    }
+
+    &__divider {
+    	margin: 0 auto;
+    	width: 229px;
+    }
+
+    &__header-category {
+    	top: 0;
+    	right: 0;
+    }
+
+    &__read-more {
+
+    	padding-left: 14px;
+    	padding-right: 14px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+    	margin-left: 10px;
+    	margin-bottom: 33px;
+		width: auto;
+		height: auto;
+		float: none;
+    }
+
+
+	&__tags {
+		float: none;
+		margin-top: 0;
+		margin-right: 0;
+		margin-left: 24px;
+		margin-bottom: 26px;
+	}
+
+	&__text-italics {
+		font-size: 18px;
+		margin-top: 32px;
+		line-height: 30px;
+	}
+  }
+
+	.last-post {
+		margin-bottom: 54px;
+		&__header-date {
+			padding-top: 29px;
+		}
+	}
+
+
+  
+}
